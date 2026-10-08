@@ -16,6 +16,11 @@ public class Dev {
 //        this.laptop = laptop;
 //    }
 
+    @Autowired
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
+    }
+
     public void build() {
 
         laptop.compile();
