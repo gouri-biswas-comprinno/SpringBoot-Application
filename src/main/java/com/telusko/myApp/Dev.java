@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class Dev {
 
     @Autowired // field injection
-    Laptop laptop;
+    private Computer comp;
 
 
     //constructor injections
@@ -16,14 +16,14 @@ public class Dev {
 //        this.laptop = laptop;
 //    }
 
-    @Autowired
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
-    }
+//    @Autowired
+//    public void setLaptop(Laptop laptop) {
+//        this.laptop = laptop;
+//    }
 
     public void build() {
 
-        laptop.compile();
+        comp.compile();
 
         System.out.println("working on a project");
     }
